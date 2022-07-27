@@ -1,0 +1,35 @@
+* {
+    border: 1px solid black;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto) repeat(3, 200px);
+
+}
+.hijo{
+    background-color: antiquewhite;
+    padding: 15px;
+}
+.hijo:first-child {
+    text-align: center;
+    font-size: 64px;
+    grid-column: 1/4;
+}
+.hijo:nth-child(2) {
+    background: antiquewhite url(../img/portada.jpg) no-repeat center;
+    background-size: contain;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+.hijo:nth-child(3) {
+    background: antiquewhite url(../img/noestuCulpa.jpeg) no-repeat center;
+    background-size: contain;
+}
+.hijo:nth-child(4) {
+    background: antiquewhite url(https://st1.uvnimg.com/dims4/default/a7897ae/2147483647/thumbnail/480x270/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fg%2Fgood-will-hunting-robin-williams-matt-damon.jpg) center no-repeat;
+    background-size: contain;
+}
+.hijo:nth-child(5) {
+    font-size: 32px;
+}
